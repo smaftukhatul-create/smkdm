@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMKDM</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="ppdb.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h2>Pendaftaran Peserta Didik Baru (PPDB) 2026</h2>
+
+    <form action="#" method="post">
+      <h3>Data Pribadi</h3>
+      <label>Nama Lengkap:</label><br />
+      <input type="text" name="nama-lengkap" /><br /><br />
+
+      <label>Jenis Kelamin:</label><br />
+      <input type="radio" name="jenis_kelamin" value="Laki-laki" required />
+      laki-laki
+      <input type="radio" name="jenis_kelamin" value="Perempuan" /> Perempuan
+      <br /><br />
+
+      <label>Tempat Lahir:</label><br />
+      <input type="text" name="tempat_lahir" required /><br /><br />
+
+      <label>Tanggal Lahir:</label><br />
+      <input type="date" name="tanggal_lahir" required /><br /><br />
+
+      <label>NISN:</label><br />
+      <input type="number" name="nisn" required /><br /><br />
+
+      <label>Agama:</label><br />
+      <select name="agama" required>
+        <option value="">-- Pilih Agama --</option>
+        <option>Islam</option>
+        <option>Kristen</option>
+        <option>Katholik</option>
+        <option>Hindu</option>
+        <option>Buddha</option>
+        <option>Konghucu</option>
+      </select>
+      <br /><br />
+
+      <label>Alamat Lengkap:</label><br />
+      <textarea name="alamat" required></textarea><br /><br />
+
+      <label>No. HP Siswa:</label><br />
+      <input type="tel" name="no_hp" required /><br /><br />
+
+      <hr />
+
+      <h3>Data Sekolah Asal</h3>
+
+      <label>Nama Sekolah Asal:</label><br />
+      <input type="text" name="sekolah_asal" required /><br /><br />
+
+      <label>Tahun Lulus:</label><br />
+      <input type="number" name="tahun_lulus" required /><br /><br />
+
+      <hr />
+
+      <h3>Pilihan Jurusan</h3>
+
+      <label>Pilih Jurusan:</label><br />
+      <select name="jurusan" required>
+        <option value="">-- Pilih Jurusan --</option>
+        <option>Teknik Komputer dan Jaringan (TKJ)</option>
+        <option>Rekayasa Perangkat Lunak (RPL)</option>
+        <option>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</option>
+        <option>Akuntansi dan Keuangan Lembaga (AKL)</option>
+      </select>
+      <br /><br />
+
+      <hr />
+
+      <h3>Data Orang Tua</h3>
+
+      <label>Nama Ayah:</label><br />
+      <input type="text" name="nama_ayah" required /><br /><br />
+
+      <label>Pekerjaan Ayah:</label><br />
+      <input type="text" name="pekerjaan_ayah" required /><br /><br />
+
+      <label>No. HP Orang Tua:</label><br />
+      <input type="tel" name="no_hp_ortu" required /><br /><br />
+
+      <hr />
+
+      <label>
+        <input type="checkbox" required />
+        Saya menyatakan bahwa data yang diisi adalah benar.
+      </label>
+      <br /><br />
+
+      
+      <button type="submit">Daftar</button>
+    </form>
+  </body>
+</html>

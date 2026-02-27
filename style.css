@@ -1028,23 +1028,17 @@ li {
     font-size: 55%;
   }
 
-  #menu {
-    display: inline-block;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  .navbar-nav {
-    position: relative;
+ .navbar-nav {
+    position: absolute;
     top: 100%;
     right: -100%;
-    background: white;
-    width: 250px;
+    background-color: var(--primary);
+    width: 20rem;
     height: 100vh;
+    transition: 0.5s;
+    display: flex;
     flex-direction: column;
-    padding: 2rem;
-    transition: 0.3s ease;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    align-items: flex-start;
   }
 
   .navbar-nav.active {
@@ -1052,13 +1046,21 @@ li {
   }
 
   .navbar-nav a {
-    margin: 1rem 0;
-    font-size: 1rem;
+    color: #010101;
+    display: block;
+    margin: 1rem;
+    padding: 0.5;
+    font-size: 1.5rem;
   }
 
-  .navbar-extra {
-    display: none;
+  .navbar-nav a::after {
+    transform-origin: 0 0;
   }
+
+  .navbar-nav a:hover::after {
+    transform: scale(0.3);
+  }
+
 
  .single-slider {
     height: 55vh;

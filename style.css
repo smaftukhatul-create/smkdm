@@ -1061,6 +1061,11 @@ li {
     transform: scale(0.3);
   }
 
+  .btn-ppdb {
+  white-space: nowrap;
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+}
 
  .single-slider {
     height: 55vh;

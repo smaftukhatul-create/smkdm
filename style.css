@@ -996,6 +996,27 @@ li {
     font-size: 0.95rem;
   }
 
+  .kompetensi-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stats-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.berita-card {
+  flex-direction: column;
+}
+
+.berita-card img,
+.berita-content {
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+}
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1008,7 +1029,7 @@ li {
   }
 
   #menu {
-    display: block;
+    display: inline-block;
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -1077,6 +1098,30 @@ li {
   .topbar-right {
     justify-content: flex-start;
   }
+
+  .kompetensi-container {
+  grid-template-columns: 1fr;
+}
+
+.stats-container {
+  grid-template-columns: 1fr;
+}
+
+.footer-container {
+  grid-template-columns: 1fr;
+}
+
+.profil h2,
+.lokasi h2,
+.struktur-modern h1,
+.error-inner h1 {
+  font-size: 2.5rem;
+}
+
+.profil-tabel {
+  width: 100%;
+  min-width: unset;
+}
 
   .footer-container {
     grid-template-columns: repeat(2, 1fr);

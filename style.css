@@ -1035,7 +1035,7 @@ li {
   }
 
   .navbar-nav {
-    position: absolute;
+    position: relative;
     top: 100%;
     right: -100%;
     background: white;

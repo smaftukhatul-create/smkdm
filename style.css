@@ -168,7 +168,7 @@ li {
 
 .navbar-extra a {
   color: #010101;
-  margin: 0 0.5;
+  margin: 0 0.5rem;
 }
 
 .navbar-extra a:hover {
@@ -979,8 +979,21 @@ li {
     transform: scale(0.3);
   }
 
-  .slider {
-    height: 62.5vh;
+   .single-slider {
+    height: 60vh;
+  }
+
+  .single-slider .text {
+    max-width: 80%;
+    margin-left: 6%;
+  }
+
+  .single-slider h1 {
+    font-size: 2rem;
+  }
+
+  .single-slider p {
+    font-size: 0.95rem;
   }
 
   .footer-container {
@@ -994,9 +1007,59 @@ li {
     font-size: 55%;
   }
 
-  .slider {
-    height: 55vh;
+  #menu {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: white;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    padding: 2rem;
+    transition: 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar-nav a {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .navbar-extra {
+    display: none;
+  }
+
+ .single-slider {
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .single-slider .text {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .single-slider h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .single-slider p {
+    font-size: 0.85rem;
+  }
+
 
   .topbar {
     flex-direction: column;
